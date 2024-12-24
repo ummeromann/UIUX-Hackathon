@@ -19,7 +19,7 @@ export default function TopfourHappy() {
           <div className="mt-4">
             <p className="font-bold">Sarah M.</p>
             <p className="text-sm mt-2">
-              "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations."
+            &quot;I&apos;m blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.&quot;
             </p>
           </div>
         </div>
@@ -33,7 +33,7 @@ export default function TopfourHappy() {
           <div className="mt-4">
             <p className="font-bold">Alex K.</p>
             <p className="text-sm mt-2">
-              "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions."
+            &quot;Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.&quot;
             </p>
           </div>
         </div>
@@ -47,7 +47,7 @@ export default function TopfourHappy() {
           <div className="mt-4">
             <p className="font-bold">James L.</p>
             <p className="text-sm mt-2">
-              "As someone who's always on the lookout for unique fashion pieces, I am thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends."
+            &quot;As someone who&apos;s always on the lookout for unique fashion pieces, I am thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.&quot;
             </p>
           </div>
         </div>

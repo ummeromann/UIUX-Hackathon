@@ -1,3 +1,4 @@
+import Image from 'next/image'
 export default function Cart() {
   return (
     <div className="min-h-screen bg-gray-50">
@@ -13,7 +14,9 @@ export default function Cart() {
                 <img
                   src="/product14.png"
                   alt="Gradient Graphic T-shirt"
-                  className="w-16 h-16 sm:w-20 sm:h-20"
+                  className=" sm:w-20 sm:h-20"
+                  width={16}
+                  height={16}
                 />
                 <div>
                   <h3 className="text-base sm:text-lg font-semibold">Gradient Graphic T-shirt</h3>
@@ -53,7 +56,9 @@ export default function Cart() {
                 <img
                   src="/product3.png"
                   alt="Checkered Shirt"
-                  className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg"
+                  className="sm:w-20 sm:h-20 rounded-lg"
+                  width={16}
+                  height={16}
                 />
                 <div>
                   <h3 className="text-base sm:text-lg font-semibold">Checkered Shirt</h3>
@@ -93,7 +98,9 @@ export default function Cart() {
                 <img
                   src="/product2.png"
                   alt="Skinny Fit Jeans"
-                  className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg"
+                  className="sm:w-20 sm:h-20 rounded-lg"
+                  width={16}
+                  height={16}
                 />
                 <div>
                   <h3 className="text-base sm:text-lg font-semibold">Skinny Fit Jeans</h3>

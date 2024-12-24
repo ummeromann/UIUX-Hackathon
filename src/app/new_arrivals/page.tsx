@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const products = [
@@ -153,8 +154,10 @@ const CategoryPage = () => {
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-full h-48 object-cover rounded-md mb-4"
-                  />
+                    className="object-cover rounded-md mb-4"
+                    width={"full"} 
+                    height={48}
+                    />
                   <h3 className="font-semibold text-lg">{product.name}</h3>
                   <p className="text-yellow-500 text-2xl mt-1">
                     {"★".repeat(Math.floor(product.rating))}
