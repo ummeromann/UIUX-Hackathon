@@ -11,7 +11,7 @@ export default function Cart() {
 
             <div className="flex flex-col sm:flex-row items-center justify-between border-b pb-4 mb-4">
               <div className="flex items-center space-x-4 w-full sm:w-auto">
-                <img
+                <Image
                   src="/product14.png"
                   alt="Gradient Graphic T-shirt"
                   className=" sm:w-20 sm:h-20"
@@ -53,7 +53,7 @@ export default function Cart() {
             
             <div className="flex flex-col sm:flex-row items-center justify-between border-b pb-4 mb-4">
               <div className="flex items-center space-x-4 w-full sm:w-auto">
-                <img
+                <Image
                   src="/product3.png"
                   alt="Checkered Shirt"
                   className="sm:w-20 sm:h-20 rounded-lg"
@@ -95,7 +95,7 @@ export default function Cart() {
             
             <div className="flex flex-col sm:flex-row items-center justify-between border-b pb-4 mb-4">
               <div className="flex items-center space-x-4 w-full sm:w-auto">
-                <img
+                <Image
                   src="/product2.png"
                   alt="Skinny Fit Jeans"
                   className="sm:w-20 sm:h-20 rounded-lg"

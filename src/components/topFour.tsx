@@ -19,7 +19,7 @@ export default function TopfourHappy() {
           <div className="mt-4">
             <p className="font-bold">Sarah M.</p>
             <p className="text-sm mt-2">
-            &quot;I&apos;m blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.&quot;
+            &quot;I&apos;m blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I&apos;ve bought has exceeded my expectations.&quot;
             </p>
           </div>
         </div>

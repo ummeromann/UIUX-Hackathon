@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Clothes from "@/components/clothes";
 import Reviews_Shop from "@/components/reviewsShop";
+import Image from "next/image";
 
 
 export default function Shop() {
@@ -33,14 +34,14 @@ export default function Shop() {
       <div className="flex gap-5 mb-10">
         
         <div className="flex flex-col items-center">
-          <img
+          <Image
             src={product.image}
             alt={product.name}
             className="w-full sm:w-[200%] rounded-lg"
           />
           <div className="flex gap-2 mt-2">
             {product.images.map((img, index) => (
-              <img
+              <Image
                 key={index}
                 src={img}
                 alt={`Thumbnail ${index}`}

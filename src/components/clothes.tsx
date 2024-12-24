@@ -11,7 +11,7 @@ interface Iproducts {
   img_url: string;
 }
 
-let product: Iproducts[] = [
+const product: Iproducts[] = [
   {
     title: "Polo with Contrast Trims",
     id: 1,
@@ -46,7 +46,7 @@ let product: Iproducts[] = [
 let star = [<IoMdStar />, <IoMdStar />, <IoMdStar />, <IoMdStar />, <IoMdStar />];
 
 export default function Clothes() {
-  return (
+  return (    
     <div className="w-full h-auto mt-20 px-6">
       <h1 className="text-3xl sm:text-4xl font-extrabold text-center py-10">YOU MIGHT ALSO LIKE</h1>
 

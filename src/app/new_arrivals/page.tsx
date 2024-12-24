@@ -151,11 +151,11 @@ const CategoryPage = () => {
                   key={product.id}
                   className="bg-white rounded-lg shadow p-4 hover:shadow-lg transition"
                 >
-                  <img
+                  <Image
                     src={product.image}
                     alt={product.name}
                     className="object-cover rounded-md mb-4"
-                    width={"full"} 
+                    width={300}
                     height={48}
                     />
                   <h3 className="font-semibold text-lg">{product.name}</h3>
@@ -177,7 +177,7 @@ const CategoryPage = () => {
     <button className="bg-black text-white px-4 py-2 rounded-full">
       Previous
     </button>
-    <button className="bg-black w-200px text-white px-4 py-2 rounded-full absolute bottom-[-810] right-10">
+    <button className="bg-black w-200px text-white px-4 py-2 rounded-full absolute bottom-[-1050] right-10">
     Next
   </button>
   </div>
