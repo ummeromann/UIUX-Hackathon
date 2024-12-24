@@ -11,7 +11,7 @@ interface Iproducts {
   img_url: string;
 }
 
-let product: Iproducts[] = [
+const product: Iproducts[] = [
   {
     title: "Vertical Striped Shirt",
     id: 1,
@@ -42,7 +42,7 @@ let product: Iproducts[] = [
   },
 ];
 
-let star = [<IoMdStar />, <IoMdStar />, <IoMdStar />, <IoMdStar />, <IoMdStar />];
+const star = [<IoMdStar />, <IoMdStar />, <IoMdStar />, <IoMdStar />, <IoMdStar />];
 
 export default function Top_Sell() {
   return (

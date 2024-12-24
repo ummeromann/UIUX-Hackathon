@@ -43,7 +43,7 @@ const product: Iproducts[] = [
   },
 ];
 
-let star = [<IoMdStar />, <IoMdStar />, <IoMdStar />, <IoMdStar />, <IoMdStar />];
+const star = [<IoMdStar />, <IoMdStar />, <IoMdStar />, <IoMdStar />, <IoMdStar />];
 
 export default function Clothes() {
   return (    
@@ -86,4 +86,3 @@ export default function Clothes() {
 </div>
   );
 }
-
