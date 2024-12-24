@@ -144,33 +144,37 @@ const CategoryPage = () => {
 
           
           <main className="col-span-3">
-            <h2 className="text-4xl font-bold mb-6">Casual</h2>
-            <div className="grid grid-cols-3 gap-6">
-              {products.map((product) => (
-                <div
-                  key={product.id}
-                  className="bg-white rounded-lg shadow p-4 hover:shadow-lg transition"
-                >
-                  <Image
-                    src={product.image}
-                    alt={product.name}
-                    className="object-cover rounded-md mb-4"
-                    width={300}
-                    height={48}
-                    />
-                  <h3 className="font-semibold text-lg">{product.name}</h3>
-                  <p className="text-yellow-500 text-2xl mt-1">
-                    {"★".repeat(Math.floor(product.rating))}
-                    {"☆".repeat(5 - Math.floor(product.rating))}
-                  </p>
-                  <p className="text-black text-2xl font-bold mt-2 mb-2">{product.price}</p>
-                  {product.discount && (
-                    <span className="text-sm bg-red-100 text-red-600 py-1 px-2 rounded">
-                      {product.discount}
-                    </span>
-                  )}
-                </div>
-              ))}
+  <h2 className="text-4xl font-bold mb-6">Casual</h2>
+  <div className="grid grid-cols-3 gap-6">
+    {products.map((product) => (
+      <div
+        key={product.id}  // This key is for the outer div element
+        className="bg-white rounded-lg shadow p-4 hover:shadow-lg transition"
+      >
+        <Image
+          src={product.image}
+          alt={product.name}
+          className="object-cover rounded-md mb-4"
+          width={300}
+          height={48}
+        />
+        <h3 className="font-semibold text-lg">{product.name}</h3>
+        <p className="text-yellow-500 text-2xl mt-1">
+          {Array.from({ length: Math.floor(product.rating) }, (_, index) => (
+            <span key={`filled-star-${index}`}>&#9733;</span> 
+          ))}
+          {Array.from({ length: 5 - Math.floor(product.rating) }, (_, index) => (
+            <span key={`empty-star-${index}`}>&#9734;</span>
+          ))}
+        </p>
+        <p className="text-black text-2xl font-bold mt-2 mb-2">{product.price}</p>
+        {product.discount && (
+          <span className="text-sm bg-red-100 text-red-600 py-1 px-2 rounded">
+            {product.discount}
+          </span>
+        )}
+      </div>
+    ))}
                 
             
              <div className="flex justify-between items-center mt-8">

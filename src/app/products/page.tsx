@@ -48,7 +48,6 @@ export default function Products() {
   return (
     <div className="w-full h-[500px] mt-10 px-6">
       <h1 className="text-3xl sm:text-4xl font-extrabold text-center">NEW ARRIVALS</h1>
-     
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
         {product.map((data) => (
@@ -60,11 +59,15 @@ export default function Products() {
                 className="w-full h-full rounded-[20px]"
                 width={100}
                 height={100}></Image>
-              
             </div>
             <div className="mt-4">
               <p className="text-lg font-bold">{data.title}</p>
-              <div className="flex text-yellow-400">{star}</div>
+              <div className="flex text-yellow-400">
+                
+                {star.map((starElement, index) => (
+                  <span key={index}>{starElement}</span>
+                ))}
+              </div>
               <p className="text-lg font-bold mt-2">
                 {data.price}{" "}
                 {data.old_price && (
@@ -75,7 +78,7 @@ export default function Products() {
           </div>
         ))}
       </div>
-
+    
     
       <div className="mt-10 text-center">
         <button className="w-[218px] h-[52px] bg-gray-100 text-black rounded-full font-bold hover:bg-gray-200">

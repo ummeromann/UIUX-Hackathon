@@ -66,7 +66,11 @@ export default function Top_Sell() {
               </Link>
               <div className="mt-4">
                 <p className="text-lg font-bold">{data.title}</p>
-                <div className="flex text-yellow-400">{star}</div>
+                <div className="flex text-yellow-400">
+                {star.map((starElement, index) => (
+                  <span key={index}>{starElement}</span>
+                ))}
+              </div>
                 <p className="text-lg font-bold mt-2">
                   {data.price}{" "}
                   {data.old_price && (
