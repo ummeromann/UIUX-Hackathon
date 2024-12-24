@@ -38,6 +38,8 @@ export default function Shop() {
             src={product.image}
             alt={product.name}
             className="w-full sm:w-[200%] rounded-lg"
+            width={100}
+            height={100}
           />
           <div className="flex gap-2 mt-2">
             {product.images.map((img, index) => (
@@ -46,6 +48,8 @@ export default function Shop() {
                 src={img}
                 alt={`Thumbnail ${index}`}
                 className="w-20 h-20 mt-2 mr-2 border border-gray-300 rounded-md cursor-pointer"
+                width={100}
+                height={100}
               />
             ))}
           </div>
