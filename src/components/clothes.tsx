@@ -43,10 +43,16 @@ const product: Iproducts[] = [
   },
 ];
 
-const star = [<IoMdStar />, <IoMdStar />, <IoMdStar />, <IoMdStar />, <IoMdStar />];
+const star = [
+  <IoMdStar key={1} />,
+  <IoMdStar key={2} />,
+  <IoMdStar key={3} />,
+  <IoMdStar key={4} />,
+  <IoMdStar key={5} />,
+];
 
 export default function Clothes() {
-  return (    
+  return (
     <div className="w-full h-auto mt-20 px-6">
       <h1 className="text-3xl sm:text-4xl font-extrabold text-center py-10">YOU MIGHT ALSO LIKE</h1>
 
@@ -68,10 +74,8 @@ export default function Clothes() {
               <div className="mt-4">
                 <p className="text-lg font-bold">{data.title}</p>
                 <div className="flex text-yellow-400">
-                {star.map((starElement, index) => (
-                  <span key={index}>{starElement}</span>
-                ))}
-              </div>
+                  {star.map((starElement) => starElement)}
+                </div>
                 <p className="text-lg font-bold mt-2">
                   {data.price}{" "}
                   {data.old_price && (
@@ -83,6 +87,6 @@ export default function Clothes() {
           );
         })}
       </div>
-</div>
+    </div>
   );
 }

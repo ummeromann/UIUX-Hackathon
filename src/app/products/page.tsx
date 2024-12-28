@@ -10,14 +10,13 @@ interface Iproducts {
   img_url: string;
 }
 
-let product: Iproducts[] = [
+const product: Iproducts[] = [
   {
     title: "T-shirt with Tape Details",
     id: 1,
     price: "$120",
     img_url: "/product1.png",
   },
-
   {
     title: "Skinny Fit Jeans",
     id: 2,
@@ -25,14 +24,12 @@ let product: Iproducts[] = [
     img_url: "/product2.png",
     old_price: "$260",
   },
-
   {
     title: "Checkered Shirt",
     id: 3,
     price: "$180",
     img_url: "/product3.png",
   },
-
   {
     title: "Sleeve Striped T-shirt",
     id: 4,
@@ -42,7 +39,9 @@ let product: Iproducts[] = [
   },
 ];
 
-let star = [<IoMdStar />, <IoMdStar />, <IoMdStar />, <IoMdStar />, <IoMdStar />];
+const star = Array.from({ length: 5 }, (_, index) => (
+  <IoMdStar key={index} />
+));
 
 export default function Products() {
   return (
@@ -58,15 +57,14 @@ export default function Products() {
                 alt={data.title}
                 className="w-full h-full rounded-[20px]"
                 width={100}
-                height={100}></Image>
+                height={100}
+              />
             </div>
             <div className="mt-4">
               <p className="text-lg font-bold">{data.title}</p>
+
               <div className="flex text-yellow-400">
-                
-                {star.map((starElement, index) => (
-                  <span key={index}>{starElement}</span>
-                ))}
+                {star.map((starElement) => starElement)}
               </div>
               <p className="text-lg font-bold mt-2">
                 {data.price}{" "}
@@ -78,8 +76,7 @@ export default function Products() {
           </div>
         ))}
       </div>
-    
-    
+
       <div className="mt-10 text-center">
         <button className="w-[218px] h-[52px] bg-gray-100 text-black rounded-full font-bold hover:bg-gray-200">
           View All
@@ -88,6 +85,5 @@ export default function Products() {
 
       <hr className="mt-10 " />
     </div>
-
   );
 }
